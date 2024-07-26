@@ -1,0 +1,645 @@
+/* Fonts */
+@font-face {
+    font-family: "Inter";
+    src: url("../fonts/Inter-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Lanterosy";
+    src: url("../fonts/LanterosyFont.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Cyrene";
+    src: url("../fonts/Cyrene Regular.otf") format("otf");
+}
+
+@font-face {
+    font-family: "Prata";
+    src: url("../fonts/Prata-Regular.ttf") format("truetype");
+}
+
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #f8f8f8;
+}
+
+body {
+    background-color: #1b1b1b !important;
+}
+
+h2 {
+    font-family: "Prata", sans-serif;
+    font-size: 40px;
+}
+
+section {
+    margin-bottom: 90px;
+}
+
+/* Navbar */
+.navbar {
+    height: 90px !important;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(229, 229, 229, 0.7);
+    z-index: 9999;
+}
+
+.navbar .container {
+    height: 70px !important;
+}
+
+.icon-user {
+    border-right: 1px solid #e5e5e5;
+}
+
+nav li {
+    text-decoration: none;
+}
+
+.bi-person-circle {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.navbar-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.username a {
+    text-decoration: none;
+    margin-left: 15px;
+    color: #e5e5e5 !important;
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+}
+
+.navbar-title a {
+    text-decoration: none;
+    margin-bottom: 0px;
+    color: #e5e5e5 !important;
+    font-family: "Lanterosy", sans-serif;
+    font-size: 24px;
+}
+
+.navbar-menu .navbar-nav {
+    width: 150px;
+}
+
+.nav-item a {
+    color: #e5e5e5 !important;
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-item:hover a{
+    cursor: pointer;
+}
+
+.dropdown {
+    width: max-content;
+}
+
+.dropdown-menu {
+    width: 200px;
+    position: absolute;
+    left: 25% !important;
+}
+
+ul.dropdown-menu.show {
+    background-color: #343434;
+}
+
+.dropdown:hover {
+    cursor: pointer;
+}
+
+.navbar .dropdown-menu {
+    left: 5%;
+}
+
+.dropdown-menu a {
+    font-size: 16px !important;
+    margin-left: 0px;
+}
+
+.navbar .dropdown-menu .dropdown-item:hover {
+    background-color: #343434;
+}
+
+.modal-body a{
+    text-decoration: none;
+    color: #e5e5e5 ;
+}
+
+.modal-body a:hover{
+    color: #e5e5e55e;
+}
+
+/* Hero Section - Section 1 */
+.hero-section {
+    height: 100vh;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-section .title-description {
+    z-index: 3;
+}
+
+.hero-section .title {
+    font-size: 84px;
+    color: #f8f8f8;
+    font-family: "Cyrene", sans-serif;
+    letter-spacing: 3px;
+}
+
+.hero-section .description,
+.hero-section .description span {
+    font-size: 28px;
+    color: #f8f8f891;
+}
+
+.hero-section .scrolldown-sidebar p {
+    font-family: "Montserrat", sans-serif;
+    color: #f8f8f891;
+    font-size: 22px;
+    rotate: 90deg;
+}
+
+.background-image {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 850px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.background-image .img-section-1a {
+    width: 250px;
+    height: 250px;
+    transform: rotate(-13deg);
+}
+
+/* Benefits Section - Section 2 */
+.benefits-section h2 {
+    letter-spacing: 2px;
+    margin-bottom: 50px;
+}
+
+.benefits-section .card-benefits {
+    margin-bottom: 50px;
+}
+
+.benefits-section .card-benefits p,
+.benefits-section .card-benefits h3 {
+    color: #f8f8f8;
+}
+
+.benefits-section .card-benefits p {
+    font-family: "Century Schoolbook";
+    font-size: 34px;
+    border-bottom: 1px solid #f8f8f8;
+}
+
+.benefits-section .card-benefits h3 {
+    font-family: "Montserrat";
+    font-size: 24px;
+}
+
+.benefits-section .img-section-2 {
+    border-top-left-radius: 30%;
+    border-bottom-right-radius: 20%;
+    border-bottom-left-radius: 5%;
+    border-top-right-radius: 5%;
+}
+
+/* Recent Works Section - Section 3 */
+.recent-works-section {
+    margin-top: 140px;
+}
+.recent-works-section h2 {
+    letter-spacing: 4px;
+}
+
+/* Product Section - Section 4 */
+.products-section h2 {
+    margin-bottom: 20px;
+}
+
+.products-section .splide__slide {
+    margin-right: 0px !important;
+    width: calc(30%) !important;
+}
+
+.products-section .splide__track {
+    padding-top: 55px;
+}
+
+.products-section .splide__track:hover {
+    cursor: grab;
+}
+
+.products-section .splide__pagination__page {
+    display: none !important;
+}
+
+.img_box {
+    width: max-content;
+}
+
+.img_box h3,
+.img_box h4 {
+    font-family: "Prata", sans-serif;
+    transition: scale 0.3s ease-in-out, font-weight 0.3s ease-in-out;
+}
+
+.img_box h3 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.img_box .desc_box {
+    border-bottom: 1px solid #f8f8f8;
+    border-left: 1px solid #f8f8f8;
+    border-right: 1px solid #f8f8f8;
+}
+
+.img_box img {
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    transition: border-top-left-radius 0.3s ease-in-out,
+        border-top-right-radius 0.3s ease-in-out;
+}
+
+.img_box {
+    transition: transform 0.3s ease-in-out;
+}
+
+.img_box:hover {
+    transform: translateY(-20px);
+    cursor: pointer;
+}
+
+.img_box:hover img {
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.img_box:hover .desc_box h3 {
+    scale: 1.1;
+}
+
+.img_box:hover .desc_box h4 {
+    scale: 1.2;
+    font-weight: 700;
+}
+
+.products-section .splide__arrow--prev {
+    position: absolute;
+    top: 105%;
+    left: 46%;
+    transform: translateX(-46%);
+}
+
+.products-section .splide__arrow--next {
+    position: absolute;
+    top: 105%;
+    left: 52%;
+    transform: translateX(-52%);
+}
+
+.offcanvas {
+    height: 85vh;
+    width: 95vw;
+    left: 2.5vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.offcanvas-body h3,
+.offcanvas-body h4 {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-weight: 500;
+}
+.offcanvas-body h4 {
+    font-weight: 600;
+}
+
+/* Review Section - Section 5 */
+.review-section {
+    margin-top: 150px;
+}
+
+.review-section h2 {
+    margin-bottom: 60px;
+}
+
+.review-section .splide__track {
+    height: 450px;
+    width: 85%;
+    background-color: #343434;
+    border-radius: 40px;
+    padding-left: 50px !important;
+}
+
+.review-section .splide__slide {
+    margin-right: 20px !important;
+    width: calc(45%) !important;
+    height: calc(70%);
+    background-color: #f8f8f8;
+    border-radius: 20px;
+}
+
+.review-section .reviewer {
+    display: flex;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #1b1b1b;
+    position: relative;
+}
+
+.review-section .reviewer p,
+.review-section .reviewer h5 {
+    color: #1b1b1b;
+    margin-bottom: 0px !important;
+}
+
+.review-section .profile-user {
+    border-right: 1px solid #1b1b1b;
+    margin-right: 10px;
+}
+
+.review-section .reviewer h5 {
+    font-family: "Imprint MT Shadow", sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.review-section .reviewer p {
+    font-family: "Montserrat", sans-serif;
+    padding-left: 4px;
+}
+
+.review-section .quotation-mark {
+    position: absolute;
+    right: 0;
+    top: -30px;
+}
+
+.review-section .box-review {
+    background-color: #c8c8c8;
+    height: 200px;
+    width: 350px;
+    overflow: auto;
+    border-radius: 20px;
+    padding: 15px;
+}
+
+.box-review::-webkit-scrollbar {
+    width: 8px; /* Lebar scrollbar */
+}
+
+.box-review::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 40px;
+}
+
+.box-review::-webkit-scrollbar-thumb {
+    background-color: #848484;
+    border-radius: 20px;
+}
+
+.review-section .box-review p {
+    font-family: "Montserrat", sans-serif;
+    color: #4a4a4a;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: justify;
+}
+
+/* Closing Secion - Section 6 */
+.closing-section h2 {
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 25px;
+}
+
+.button-closing {
+    background-color: #575757;
+    height: max-content;
+    width: max-content;
+    padding: 10px 40px;
+    border-radius: 30px;
+    transition: background-color 0.5 ease-in-out;
+}
+
+.button-closing:hover {
+    background-color: #f8f8f8;
+    border-radius: 1px solid #575757;
+    cursor: pointer;
+}
+
+.button-closing:hover a {
+    color: #575757;
+}
+
+.button-closing a {
+    color: #f8f8f8;
+    text-decoration: none;
+    margin-bottom: 0px;
+    font-family: "Imprint MT Shadow", sans-serif;
+    font-size: 28px;
+    transition: color 0.5 ease-in-out;
+}
+
+/* Confirmation Page */
+.box-confirmation {
+    border-radius: 20px;
+    width: 750px;
+}
+
+.box-confirmation h3 {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.288);
+}
+
+.box-confirmation .price {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+}
+  
+
+@media only screen and (max-width: 768px) {
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* General */
+    h2 {
+        font-size: 34px;
+    }
+
+    .text-end {
+        text-align: center !important;
+    }
+
+    /* Navbar */
+    .navbar-user {
+        justify-content: start;
+    }
+    .bi-person-circle {
+        display: none;
+    }
+    .dropdown-toggle {
+        margin-left: 0px !important;
+    }
+    .navbar-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: black;
+        width: 100vw;
+        padding: 10px 5px;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+    .navbar-toggler-icon {
+        color: white !important;
+    }
+
+    /* Section 1 */
+    .hero-section {
+        overflow-x: hidden !important;
+    }
+
+    .hero-section .title {
+        font-size: 44px;
+        letter-spacing: 5px;
+    }
+
+    .hero-section .title span {
+        margin-top: 0px !important;
+    }
+
+    .socmed-sidebar {
+        display: none !important;
+    }
+
+    .scrolldown-sidebar {
+        display: none !important;
+    }
+
+    .background-image {
+        display: none;
+    }
+
+    .hero-section .description {
+        font-size: 20px;
+    }
+    .hero-section .description span {
+        margin-top: 10px;
+        font-size: 20px;
+    }
+
+    /* Section 2 */
+    .benefits-section {
+        overflow-x: hidden !important;
+    }
+
+    .benefits-section .card-benefits p {
+        font-size: 24px;
+    }
+
+    .benefits-section img {
+        height: 330px !important;
+        width: 280px !important;
+    }
+
+    /* Section 3 */
+    .recent-works-section {
+        overflow-x: hidden !important;
+    }
+
+    .recent-works-section img {
+        margin-left: 60px;
+        margin-bottom: 20px;
+    }
+
+    .recent-works-section .img-2 {
+        margin-top: 130px;
+    }
+
+    /* Section 4 */
+    .products-section .splide__slide {
+        width: calc(95%) !important;
+    }
+
+    .products-section .splide__arrow--prev {
+        position: absolute;
+        top: 105%;
+        left: 40%;
+        transform: translateX(-40%);
+    }
+
+    .products-section .splide__arrow--next {
+        position: absolute;
+        top: 105%;
+        left: 55%;
+        transform: translateX(-55%);
+    }
+
+    /* Section 5 */
+
+    .review-section .splide__track {
+        height: 350px;
+        width: 100%;
+        padding-left: 50px !important;
+    }
+
+    .review-section .splide__slide {
+        margin-right: 20px !important;
+        width: calc(84%) !important;
+        height: calc(70%);
+    }
+
+    .review-section .box-review {
+        /* margin: 10px 0px; */
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 200px;
+        width: 230px;
+    }
+}
+
+/* Page  */
+.stars {
+    display: flex;
+    justify-content: center;
+}
+
+.stars i {
+    font-size: 25px;
+    color: #b5b8b1;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+.stars i.active {
+    color: #ffb851;
+    transform: scale(1.2);
+}
+
+input[type="radio"] {
+    display: none;
+}
